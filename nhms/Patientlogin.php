@@ -22,10 +22,7 @@ if(isset($_POST['submit']))
                <td><label for="emailaddress" >Email Address: *</label></td>
                <td><input type="text" name= "email" class="form-control" id="email">
                </td>
-
-               <td><label for="inputPassword3">Password: *</label></td>
-               <td><input type="password" name= "password" class="form-control" id="password"></td>
-               
+          
           <tr>
      </table><br/><br/>
 

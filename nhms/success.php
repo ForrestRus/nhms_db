@@ -41,9 +41,9 @@
      }
 ?>
 
-<h1 class="text-center text-"> You Have Been Registered!</h1>
+<!--<h1 class="text-center text-"> You Have Been Registered!</h1> -->
 
-   <img src="" echo$Password; class= "rounded-circle" style="width: 20%; height: 20%" />
+   <img src="<?php echo $ava; ?>" class= "rounded-circle" style="width: 20%; height: 20%" />
 
 <div class="card" style="width: 25rem;">
   <div class="card-body">
@@ -52,7 +52,7 @@
      </h5>
      <br>
     <h6 class="card-subtitle mb-2 text-muted">
-    Your Disability is : <?php echo $disabilityName['name']; ?>
+    Your Disability is : <?php echo $_POST['dateofbirth']; ?>
     </h6>
     <br>
     <p class="card-text">

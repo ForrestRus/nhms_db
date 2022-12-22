@@ -49,12 +49,12 @@
     <h5 class="card-title">
         <?php echo $_POST['firstname'] . ' '. $_POST['lastname']; ?>
      </h5>
-    <p class="card-text">
-        Date of Birth: <?php echo $_POST['dateofbirth']; ?>
-    </p>
     <h6 class="card-subtitle mb-2 text-muted">
     <?php echo $disabilityName['name'];  ?>
     </h6>
+    <p class="card-text">
+        Date of Birth: <?php echo $_POST['dateofbirth']; ?>
+    </p>
     <p class="card-text">
        Email Address: <?php echo $_POST['emailaddress']; ?>
        
