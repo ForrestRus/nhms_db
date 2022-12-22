@@ -52,12 +52,6 @@ function checklen()
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small name="email">
   </div>
    <br>
-
-    <div class="form-group">
-    <label for="Password">Password</label>
-    <input type="Password" class="form-control" id="Password" aria-describedby="Password" name ="Password" onkeyup='checklen();' required>
-    <small id="Password" class="form-text text-muted">We'll never share your Password with anyone else.</small name="Password">
-  </div>
    <br>
 
   <div class="form-group">
@@ -66,6 +60,14 @@ function checklen()
     <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small name="phone">
   </div>
   <br>
+
+  <div class="custom-file">
+            <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar" >
+            <label class="custom-file-label" for="avatar">Choose File</label>
+            <small id="avatar" class="form-text text-danger">File Upload is Optional</small>
+            </div>
+            <br>
+            <br>
    <div class="d-grid gap-2">
   <button type="submit" name="submit" class="btn btn-info btn-block"  onclick="return checklen();" >Submit</button>
   </div>

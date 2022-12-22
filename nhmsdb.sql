@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2022 at 10:04 PM
+-- Generation Time: Dec 22, 2022 at 05:18 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -55,7 +55,8 @@ CREATE TABLE `patient` (
   `dateofbirth` date NOT NULL,
   `emailaddress` varchar(100) NOT NULL,
   `contactnumber` varchar(15) NOT NULL,
-  `disability_id` int(11) NOT NULL
+  `disability_id` int(11) NOT NULL,
+  `avatar_path` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------

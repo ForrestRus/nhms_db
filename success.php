@@ -15,8 +15,13 @@
       $emailaddress = $_POST['emailaddress'];
       $contactnumber = $_POST['contactnumber'];
       $disability = $_POST['disability'];
-      $Password= $_POST['Password'];
+      //$Password= $_POST['Password'];
 
+      $orig_file = $_FILES["avatar"]["tmp_name"];
+        $ext = pathinfo($_FILES["avatar"]["name"], PATHINFO_EXTENSION);
+        $target_dir = 'uploads/';
+        $destination = "$target_dir$patient.$ext";
+        move_uploaded_file($orig_file,$destination);
 
       $isSuccess = $crud->insertpatient($firstname,$lastname, $dateofbirth, $emailaddress, $contactnumber, $disability, $Password);
       $disabilityName = $crud->getdisabilityById($disability);
